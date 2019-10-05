@@ -14,19 +14,34 @@
             <h1> Google Books</h1>
         </div>
         <form action="" id="search-form">
-                <div class="input-group mb-3">
-                    <input type="text"
-                     class="form-control" 
-                     placeholder="Search" 
-                     id="search-term"
-                     name="search-term"
-                     autocomplete="off"
-                    >
-                        <button class="btn btn-primary" type="submit" id="button-addon2">submit</button>
+            <div class="input-group mb-3">
+                <input type="text"
+                    class="form-control" 
+                    placeholder="Search" 
+                    id="search-term"
+                    name="search-term"
+                    autocomplete="off"
+                >
+                <button class="btn btn-primary" type="submit" id="button-addon2">submit</button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card bg-light">
+                    <div class="card-header">Books</div>
+                    <div class="card-body">
+                        <div class="list-group" id="book-list">No data</div>
                     </div>
                 </div>
-        </form>
-        
+            </div>
+            <div class="col-md-7">
+                    <div class="card bg-light" id="current-book">
+                            <div class="card-header book-title"></div>
+                            <div class="card-body book-description">
+                            </div>
+                    </div>
+            </div>
+        </div>
     </div>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
